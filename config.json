@@ -1,0 +1,27 @@
+{
+    "$schema": "../../../../pnpbridge/src/pnpbridge_config_schema.json",
+    "pnp_bridge_connection_parameters": {
+      "connection_string" : "HostName=nb-azure-iot.azure-devices.net;DeviceId=impinj-r700;SharedAccessKey=5elmfnD+D0Mql5FwPLnMuloV5Uj2ERtIlrCT5my3aTI=",
+      "connection_type" : "connection_string",
+      "root_interface_model_id": "dtmi:impinj:FixedReader;12",
+      "auth_parameters": {
+          "auth_type": "symmetric_key",
+          "symmetric_key": "5elmfnD+D0Mql5FwPLnMuloV5Uj2ERtIlrCT5my3aTI=",
+      }
+    },
+    "pnp_bridge_debug_trace": false,
+    "pnp_bridge_config_source": "local",
+    "_comment_devices": "Array of devices for Azure Pnp interface should be published",
+    "pnp_bridge_interface_components": [
+        {
+            "_comment": "Impinj Reader Device (R700)",
+            "pnp_bridge_component_name": "R700",
+            "pnp_bridge_adapter_id": "impinj-reader-r700",
+            "pnp_bridge_adapter_config": {
+                "hostname": "localhost",
+                "username": "root",
+                "password": "impinj"
+            }
+        }
+    ]
+}
